@@ -6,58 +6,83 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  Header
-  
-<div>  
-  <button onclick="showit('page1')">Page 1</button>
-  <button onclick="showit('page2')">Page 2</button>
-  <button onclick="showit('page3')">Page 3</button>
-  <button onclick="showit('page4')">Page 4</button>
-  <button onclick="showit('page5')">Page 5</button>
-  <button onclick="showit('page6')">Page 6</button>
+<div class="wholepage">
+<div class="head-box">
+<div class="header" onclick="showit('page1')">Simple Javascript Games</div>
+
+
+  <div class="menu" onclick="showit('page2')">Tic-Tac-Toe</div>
+  <div class="menu" onclick="showit('page3')">Coin Game</div>
+  <div class="menu" onclick="showit('page4')">Cup Game</div>
+  <div class="menu" onclick="showit('page5')">Rock-Paper-Scissors</div>
+  <div class="menu" onclick="showit('page6')">Code</div>
 </div>  
+
+
   
-  <div id="page1" style="display:block">
-    <div class="box">
-    Page 1
+  <div id="page1" class="page1" style="display:block">
+    <div class = "page1top"> 
+      <div class= "page1topholder">
+        <div class= "welcome">
+          <div class ="page1header">Welcome to my website!
+          </div>
+        </div>
+        <div class= "welcomepic"> Coding picture</div>
+      </div>
+    </div>
+    
+    
+    
+    <div class = "page1bottom">
+      <div class ="page1bottomholder">
+      
+      
+        <div class = "page1bottomhigh">
+          <div class ="page1topholder">
+            <div class ="welcomepic"> Pic of Me</div>
+            <div class ="welcome"> About me</div>
+          </div>
+        </div>
+    
+  </div>
   </div>
   </div>
 
 
-  <div id="page2" style="display:none">
-    <div class="box">
-     Page 2
+  <div id="page2" class = "page2" style="display:none">
+    <div>
+     Tic-Tac-Toe
  
 </div>
 </div>
   
   
   <div id="page3" style="display:none">
-    <div class="box">
-    Page 3
+    <div>
+    Coin Game
   </div>
   </div>
   
   <div id="page4" style="display:none">
-    <div class="box">
-    Page 4
+    <div>
+    Cup Game
   </div>
 </div>
 
 <div id="page5" style="display:none">
-    <div class="box">
-     Page 5
+    <div>
+     Rock-Paper-Scissors
  
 </div>
 </div>
 
 <div id="page6" style="display:none">
-    <div class="box">
-     Page 6
+    <div>
+     Get the Code
  
 </div>
 </div>
-  
+</div>  
   
 <script src="script.js"></script>
 </body>

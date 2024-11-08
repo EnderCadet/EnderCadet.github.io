@@ -6,11 +6,121 @@ html {
 body {
   height: 100%;
   width: 100%;
-  margin: 5px;
+  margin: 0;
 }
 
-.box {
-  height: 400px;
-  width: 800px;
-  border: solid 3px black;
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.wholepage{
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to top, #D7DDD9, #DDE3E1, #D5D9E8);
+}
+
+.head-box{
+  background-color: white;
+}
+
+
+.header {
+  font-size: 20px;
+  margin: 10px;
+  width: 150px;
+  display: inline-block;
+  border: 1px solid;
+}
+
+.header:hover {
+  color: #004545;
+  text-shadow: 2px 2px 15px #0000;
+}
+
+.menu {
+  display: inline-block;
+  margin-right: 20px;
+  border: 1px black solid;
+  vertical-align: sub;
+}
+
+.menu:hover {
+  color: #004545;
+  text-shadow: 2px 2px 15px #0000;
+}
+
+.page1{
+  height: 200%;
+  border: 3px green solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.page1top{
+  flex:1;  
+  height: 23.75%;
+
+  border: 3px blue solid;
+}
+
+.page1topholder{
+  height: 98%;
+  border: 3px green solid;
+  display: flex;
+  flex-direction: row;
+}
+
+.welcome {
+  flex:1;  
+  height: 90%;
+
+  border: 3px blue solid;
+}
+
+.welcomepic{
+  flex:2;  
+  height: 90%;
+
+  border: 3px solid red;
+}
+
+.page1header{
+  font-size: 25px;
+  padding: 10% 0;
+  margin-bottom: auto;
+  border: 1px solid;
+  text-align: center;
+}
+
+.page1bottom{
+  flex:2;  
+  height: 71.25%;
+
+  border: 3px solid red;
+}
+
+.page1bottomholder{
+  height: 99%;
+  border: 3px green solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.page1bottomhigh{
+  flex: 1;
+
+  border: 2px solid blue;
+}
+
+.page1bottomlow{
+  flex: 2;
+
+  border: 2px solid;
+}
+
+.page2{
+  height: 200%;
+  border: 3px blue solid;
+
 }

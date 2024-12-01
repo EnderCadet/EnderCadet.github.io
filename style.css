@@ -124,3 +124,246 @@ img {
   border: 3px blue solid;
 
 }
+
+.parent {
+display: grid;
+grid-template-columns: 85px 85px 85px;
+grid-auto-rows: 85px 85px 85px;
+grid-gap: 20px;
+margin-left: 10%;
+margin-top: 5%;
+}
+
+.blank {
+  background-color: white;
+  border: solid 3px black;
+  transition: 1s;
+}
+
+.blank:hover {
+ cursor: pointer
+}
+
+.player1 {
+  font-size: 70px;
+  text-align: center;
+  color: blue;
+  border: solid 3px black;
+/* transition: 1s; */
+  pointer-events: none;
+}
+
+.player2 {
+  color: red;
+  font-size: 70px;
+  text-align: center;
+  border: solid 3px black;
+/*  transition: 1s;*/
+  pointer-events: none;
+}
+
+.winner{
+  margin-top: 5px;
+  margin-left: 130px; 
+}
+
+.resetbutton{
+  margin-top: 5px;
+  margin-left: 130px; 
+}
+
+.coinPage{
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+}
+
+.pile1{
+  flex:2;  
+  height: 90%;
+  flex-wrap: wrap;
+}
+
+.pile2{
+  flex: 2;  
+  height: 90%;
+  
+  flex-wrap: wrap;
+}
+
+.pile3 {
+  flex: 2;  
+  height: 90%;
+}
+
+.coin{
+  display: inline-block;
+  border: 2px grey solid;
+  background-color: silver;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+}
+
+.selected{
+  border: 3px green solid;
+}
+
+.pos1{
+  border-bottom: 175px solid #cf0404;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 120px;
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  transition: 1s;
+}
+
+.pos2{  
+  border-bottom: 175px solid #cf0404;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 120px;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  transition: 1s;
+}
+
+.pos3{
+  border-bottom: 175px solid #cf0404;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 120px;  
+  position: absolute;
+  top: 35%;
+  left: 70%;
+  transition: 1s;
+}
+
+.pos1:hover {
+ cursor: pointer
+}
+
+.pos2:hover {
+ cursor: pointer
+}
+
+.pos3:hover {
+ cursor: pointer
+}
+
+.cupBall1{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  top: 70%;
+  left: 20%;
+  background-color: blue;
+  position: absolute;
+  display: none;
+}
+
+.cupBall2{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  top: 70%;
+  left: 50%;
+  background-color: blue;
+  position: absolute;
+  display: none;
+}
+
+.cupBall3{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  top: 70%;
+  left: 80%;
+  background-color: blue;
+  position: absolute;
+  display: none;
+}
+
+.cupReveal {
+  animation: cupReveal 1s linear infinite;
+}
+
+
+@keyframes cupReveal {
+  0%{
+    top: 35%;
+  }
+  
+  50%{
+    top: 0%;
+  }
+  
+  100%{
+    top: 35%;    
+  }
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  border: solid;
+  background-color: blue;
+  top: 50px;
+  left: 50px;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.csParent {
+position: absolute;
+display: grid;
+grid-template-columns: 100px 100px;
+grid-auto-rows: 100px 100px;
+grid-gap: 40px;
+margin-left: 200px;
+margin-top: 5%
+}
+
+.csBox {
+  background-color: white;
+  border: solid 3px black;
+  border-radius: 10px;
+  font-size: 60px;
+  text-align: center;
+  padding: 10px;
+}
+
+.csBox:hover {
+ cursor: pointer
+}
+
+.csSel1{
+  border: solid 5px green;
+}
+
+.csSel2{
+  border: solid 5px red;  
+}
+
+.splitbuttons{
+  position: absolute;
+  top: 50px;
+  display: none;
+}

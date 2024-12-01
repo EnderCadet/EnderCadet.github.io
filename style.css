@@ -320,17 +320,6 @@ margin-top: 5%;
   left: 50px;
 }
 
-html {
-  height: 100%;
-  width: 100%;
-}
-
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-}
-
 .csParent {
 position: absolute;
 display: grid;

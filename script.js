@@ -226,7 +226,7 @@ function pileReset(pile, gameReset){
 for (let i=0; i < pile.length; i++){
   document.getElementById((pile[i]).id).className = "coin";
   if (gameReset === true){
-  document.getElementById((pile[i]).id).style.display = "block";
+  document.getElementById((pile[i]).id).style.display = "inline-block";
   }
 }
 
@@ -251,7 +251,7 @@ pileReset(pile3, true);
 grabbedCoins = 0;
 coinTurn = 0;
 currentPile = "pile1";
-document.getElementById("coinWinnerHead").innerText = "The Winner is:";
+document.getElementById("coinWinnerHead").innerText = "";
 }
 
 //cup game -------------------------------------------------
@@ -428,8 +428,8 @@ function ballClicked(){
 function rand(){
 	x = Math.floor(Math.random() * 95);
   y = Math.floor(Math.random() * 95);
-  document.getElementById("ball").style.top = x + "%";
-  document.getElementById("ball").style.left = y + "%";
+  document.getElementById("ball").style.marginTop = x + "%";
+  document.getElementById("ball").style.marginLeft = y + "%";
 }
 
 //chopsticks ----------------------------------------------

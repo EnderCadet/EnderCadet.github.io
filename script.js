@@ -401,6 +401,7 @@ function startCup(){
 // ball game -----------------------------------------------
 function startGame(){
 	if (gameRun === false){
+  document.getElementById("ballCount").innerText = ""
  setTimeout(ballReset, 20000);
  time = setInterval(rand, 1500)
  gameRun = true;

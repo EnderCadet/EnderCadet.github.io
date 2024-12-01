@@ -61,6 +61,10 @@
   
 <div class = "gameSpace">
     <div id="coinWinnerHead"></div>
+    <div class = "centered">
+    <button id ="coinSub" onclick="coinTurnSub()">Submit Turn</button>
+    <button id ="coinRes" onclick="coinReset()">Reset Game</button>
+    </div>
 <div class="coinPage">
   
   <div class="pile1">
@@ -91,8 +95,7 @@
 
 </div>
 
-<button id ="coinSub" onclick="coinTurnSub()">Submit Turn</button>
-<button id ="coinRes" onclick="coinReset()">Reset Game</button>
+
 </div>
 </div>
 
@@ -102,9 +105,13 @@
   <div class = "instructionsBar">The cup game is a classic memory game in which you follow which cup the ball is under. Click on the cup to lift it up and see which one it is under! There are three rounds to this game, with each getting faster than the rest. Find the ball, then click start when you are ready to start the game!</div>
     
 <div class = "gameSpace">
+<div class = "centered">
  <button id= "cupGameStart" onclick="startCup()"> Start Game</button>
  <button id= "cupGameReset" onclick="resetCup()"> Reset</button>
+ </div>
+ <div class = "centered">
  <div id= "cupGameWin"> </div>
+ </div>
  
  <div class= "parent2">
 
@@ -128,11 +135,15 @@
  <div class = "instructionsBar">The ball game is a simple game, in which you click on the blue ball as it appears and dissappears on the screen. You have 20 seconds to click the ball as many times as you can! Be warned though! the ball will change once every 1.5 seconds! My version doesn't have a set amount for you to get, so it will just display the amount of clicks you got. Have fun!</div>
  
  <div class = "gameSpace">  
+
      <button id = "button1" onclick ="startGame()">Start</button>
   <button id = "ballReset" onclick = "ballReset()"> Reset</button>
+
   
-  <div id = "ballCount"> Times Clicked: </div>
-  <div class = "ballspace">
+
+ <div id = "ballCount"></div>
+
+ <div class = "ballspace">
   <div id= "ball" class ="ball" onclick="ballClicked()">
   </div>
   </div>
@@ -145,10 +156,13 @@
     <div class = "instructionsBar">This game is a computer version of the finger game Chopsticks. Each player has two "hands" that have a certain amount of fingers up. On your turn you select which of your hands you would like to use (shown in green) to add to one of your opponents hands (shown in red). Your other hand will also appear in red, as you can choose to split the number on your chosen hand with that of the other hand. If a hand gets to 5 it is out. The last one standing wins!</div>
      
      <div class = "gameSpace">
+      <div class = "centered">
      <button id = "csStartBtn" onclick = "csStart()">Start</button>
 <button id = "csResetBtn" onclick = "csReset()">Reset</button>
+</div>
+ <div class = "centered">
 <div id = "csWinner"></div>
-
+</div>
 <div id = "splitbuttons" class= "splitbuttons">
     <div class="radio" onchange="split()">
   <input type="radio" name="amount" value= "1"> 1 <br>
@@ -157,7 +171,7 @@
 <input type="radio" name="amount" value= "4"> 4 <br>
 <input type="radio" name="amount" value= "5"> 5 <br>
 </div>
-<div id="splitResult">Select the amount to move</div>
+<div id="splitResult">Choose move amount</div>
 </div>
 
 <div class = "centered">

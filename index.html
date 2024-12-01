@@ -14,8 +14,8 @@
   <div class="menu" onclick="showit('page2')">Tic-Tac-Toe</div>
   <div class="menu" onclick="showit('page3')">Coin Game</div>
   <div class="menu" onclick="showit('page4')">Cup Game</div>
-  <div class="menu" onclick="showit('page5')">Rock-Paper-Scissors</div>
-  <div class="menu" onclick="showit('page6')">Code</div>
+  <div class="menu" onclick="showit('page5')">Ball Game</div>
+  <div class="menu" onclick="showit('page6')">Chopsticks</div>
 </div>  
 
 
@@ -52,37 +52,123 @@
   <div id="page2" class = "page2" style="display:none">
     <div>
      Tic-Tac-Toe
+     <div id="winner" class="winner"> </div>
+<button id="reset" class="resetbutton" onclick="reset()"> Reset </button>
+Vs. Computer
+<input type="checkbox" id="compcheck" name="compcheck"/>
+
+
+<div class="parent">
+<div id ="div1" class= "blank" onclick= "select(this, 0)"> </div>
+<div id ="div2" class= "blank" onclick= "select(this, 1)"> </div>
+<div id ="div3" class= "blank" onclick= "select(this, 2)"> </div>
+<div id ="div4" class= "blank" onclick= "select(this, 3)"> </div>
+<div id ="div5" class= "blank" onclick= "select(this, 4)"> </div>
+<div id ="div6" class= "blank" onclick= "select(this, 5)"> </div>
+<div id ="div7" class= "blank" onclick= "select(this, 6)"> </div>
+<div id ="div8" class= "blank" onclick= "select(this, 7)"> </div>
+<div id ="div9" class= "blank" onclick= "select(this, 8)"> </div>
+</div>
  
 </div>
 </div>
   
   
   <div id="page3" style="display:none">
-    <div>
     Coin Game
+    <div id="coinWinnerHead">The Winner is: </div>
+<div class="coinPage">
+  
+  <div class="pile1">
+  <div id="coin1" class='coin' onclick="coinPick1(this)"></div>
+  <div id="coin2" class='coin' onclick="coinPick1(this)"></div>
+  <div id="coin3" class='coin' onclick="coinPick1(this)"></div>
   </div>
+  
+  <div class="pile2">
+  <div id="coin4" class='coin' onclick="coinPick2(this)"></div>
+  <div id="coin5" class='coin' onclick="coinPick2(this)"></div>
+  <div id="coin6" class='coin' onclick="coinPick2(this)"></div>
+  <div id="coin7" class='coin' onclick="coinPick2(this)"></div>
+  <div id="coin8" class='coin' onclick="coinPick2(this)"></div>
+  </div>
+  
+  <div class="pile3">
+  <div id="coin9" class='coin' onclick="coinPick3(this)"></div>
+  <div id="coin10" class='coin' onclick="coinPick3(this)"></div>
+  <div id="coin11" class='coin' onclick="coinPick3(this)"></div>
+  <div id="coin12" class='coin'onclick="coinPick3(this)"></div>
+  <div id="coin13" class='coin' onclick="coinPick3(this)"></div>
+  <div id="coin14" class='coin' onclick="coinPick3(this)"></div>
+  <div id="coin15" class='coin'onclick="coinPick3(this)"></div>
+</div>
+
+
+</div>
+
+<button id ="coinSub" onclick="coinTurnSub()">Submit Turn</button>
+<button id ="coinRes" onclick="coinReset()">Reset Game</button>
   </div>
   
   <div id="page4" style="display:none">
-    <div>
     Cup Game
+    
+  <div id= "cupBall1" class="cupBall1"></div>
+  <div id= "cupBall2" class="cupBall2"></div>
+  <div id= "cupBall3" class="cupBall3"></div>
+
+<div class= "parent2">
+  <div id= "cup1" class="pos1" onclick = "guessCup(this)"></div>
+  <div id= "cup2" class="pos2" onclick = "guessCup(this)"></div>
+  <div id= "cup3" class="pos3" onclick = "guessCup(this)"></div>
   </div>
+ 
+ <button id= "cupGameStart" onclick="startCup()"> Start Game</button>
+ <button id= "cupGameReset" onclick="resetCup()"> Reset</button>
+ <div id= "cupGameWin"> </div>
 </div>
 
 <div id="page5" style="display:none">
-    <div>
-     Rock-Paper-Scissors
+   
+     <button id = "button1" onclick ="startGame()">Start</button>
+  <button id = "ballReset" onclick = "ballReset()"> Reset</button>
+  
+  <div id = "ballCount"> Times Clicked: </div>
+  
+  <div id= "ball" class ="ball" onclick="ballClicked()">
+  </div>
  
-</div>
+
 </div>
 
 <div id="page6" style="display:none">
     <div>
-     Get the Code
+     Chopsticks
+     <button id = "csStartBtn" onclick = "csStart()">Start</button>
+<button id = "csResetBtn" onclick = "csReset()">Reset</button>
+<div id = "csWinner"></div>
+
+<div id = "splitbuttons" class= "splitbuttons">
+    <div class="radio" onchange="split()">
+  <input type="radio" name="amount" value= "1"> 1 <br>
+<input type="radio" name="amount" value= "2"> 2 <br>
+<input type="radio" name="amount" value= "3"> 3 <br>
+<input type="radio" name="amount" value= "4"> 4 <br>
+<input type="radio" name="amount" value= "5"> 5 <br>
+</div>
+<div id="splitResult">Select the amount to move</div>
+</div>
+
+<div class="csParent">
+<div id ="cs1" class= "csBox" onclick = "csChoice(this, 1)"> 1 </div>
+<div id ="cs2" class= "csBox" onclick = "csChoice(this, 2)"> 1 </div>
+<div id ="cs3" class= "csBox" onclick = "csChoice(this, 1)"> 1 </div>
+<div id ="cs4" class= "csBox" onclick = "csChoice(this, 2)"> 1 </div>
+</div>
  
 </div>
 </div>
-</div>  
+
   
 <script src="script.js"></script>
 </body>

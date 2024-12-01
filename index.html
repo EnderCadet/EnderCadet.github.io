@@ -5,6 +5,7 @@
   <title>Document</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
 <div class="wholepage">
 <div class="head-box">
@@ -21,43 +22,24 @@
 
   
   <div id="page1" class="page1" style="display:block">
-    <div class = "page1top"> 
-      <div class= "page1topholder">
-        <div class= "welcome">
-          <div class ="page1header">Welcome to my website!
-          </div>
-        </div>
-        <div class= "welcomepic"> Coding picture</div>
-      </div>
-    </div>
-    
-    
-    
-    <div class = "page1bottom">
-      <div class ="page1bottomholder">
-      
-      
-        <div class = "page1bottomhigh">
-          <div class ="page1topholder">
-            <div class ="welcomepic"> Pic of Me</div>
-            <div class ="welcome"> About me</div>
-          </div>
-        </div>
-    
-  </div>
-  </div>
+  welcome page
   </div>
 
 
-  <div id="page2" class = "page2" style="display:none">
-    <div>
-     Tic-Tac-Toe
+  <div id="page2" class = "gamePage" style="display:none">
+    <div class = "instructionsBar"> This is the classic game of Tic-Tac-Toe. Player one will begin by clicking on one of the empty squares to claim it with a blue X, and player 2 will follow claiming a different one with a "O". Players will take turns until one gets three Xs or Os in a row, or until the board is filled. If you wish to reset the game, simply click the reset button. If you wish to play with a computer (a not very smart one), as player two, just check the box.</div>
+    <div class = "gameSpace">
+    
      <div id="winner" class="winner"> </div>
+     <div class = "centered">
+    
 <button id="reset" class="resetbutton" onclick="reset()"> Reset </button>
-Vs. Computer
-<input type="checkbox" id="compcheck" name="compcheck"/>
+<div class = "resetbutton">
+<input type="checkbox" id="compcheck" class = "compcheck" name="compcheck"/> Vs. Computer
+     </div>
+     </div>
 
-
+<div class= "centered">
 <div class="parent">
 <div id ="div1" class= "blank" onclick= "select(this, 0)"> </div>
 <div id ="div2" class= "blank" onclick= "select(this, 1)"> </div>
@@ -69,14 +51,16 @@ Vs. Computer
 <div id ="div8" class= "blank" onclick= "select(this, 7)"> </div>
 <div id ="div9" class= "blank" onclick= "select(this, 8)"> </div>
 </div>
- 
+    </div>
 </div>
 </div>
   
   
-  <div id="page3" style="display:none">
-    Coin Game
-    <div id="coinWinnerHead">The Winner is: </div>
+  <div id="page3" class = "gamePage" style="display:none">
+  <div class = "instructionsBar">The purpose of the coin game is to not take the last coin. Each of the two players will take turns clicking on coins from the same pile to select them, then pushing the submit turn button when you are finished to take those coins. You can take as many coins as you want during your turn, but they must be from the same pile. The winner is the one who does not take the last coin. There is also a reset button to reset the game.</div>
+  
+<div class = "gameSpace">
+    <div id="coinWinnerHead"></div>
 <div class="coinPage">
   
   <div class="pile1">
@@ -91,6 +75,7 @@ Vs. Computer
   <div id="coin6" class='coin' onclick="coinPick2(this)"></div>
   <div id="coin7" class='coin' onclick="coinPick2(this)"></div>
   <div id="coin8" class='coin' onclick="coinPick2(this)"></div>
+
   </div>
   
   <div class="pile3">
@@ -108,42 +93,58 @@ Vs. Computer
 
 <button id ="coinSub" onclick="coinTurnSub()">Submit Turn</button>
 <button id ="coinRes" onclick="coinReset()">Reset Game</button>
-  </div>
+</div>
+</div>
+
+
   
-  <div id="page4" style="display:none">
-    Cup Game
+  <div id="page4" class="gamePage" style="display:none">
+  <div class = "instructionsBar">The cup game is a classic memory game in which you follow which cup the ball is under. Click on the cup to lift it up and see which one it is under! There are three rounds to this game, with each getting faster than the rest. Find the ball, then click start when you are ready to start the game!</div>
     
-  <div id= "cupBall1" class="cupBall1"></div>
+<div class = "gameSpace">
+ <button id= "cupGameStart" onclick="startCup()"> Start Game</button>
+ <button id= "cupGameReset" onclick="resetCup()"> Reset</button>
+ <div id= "cupGameWin"> </div>
+ 
+ <div class= "parent2">
+
+   <div id= "cupBall1" class="cupBall1"></div>
   <div id= "cupBall2" class="cupBall2"></div>
   <div id= "cupBall3" class="cupBall3"></div>
 
-<div class= "parent2">
+
   <div id= "cup1" class="pos1" onclick = "guessCup(this)"></div>
   <div id= "cup2" class="pos2" onclick = "guessCup(this)"></div>
   <div id= "cup3" class="pos3" onclick = "guessCup(this)"></div>
   </div>
  
- <button id= "cupGameStart" onclick="startCup()"> Start Game</button>
- <button id= "cupGameReset" onclick="resetCup()"> Reset</button>
- <div id= "cupGameWin"> </div>
+</div>
 </div>
 
-<div id="page5" style="display:none">
-   
+
+
+
+<div id="page5" class = "gamePage" style="display:none">
+ <div class = "instructionsBar">The ball game is a simple game, in which you click on the blue ball as it appears and dissappears on the screen. You have 20 seconds to click the ball as many times as you can! Be warned though! the ball will change once every 1.5 seconds! My version doesn't have a set amount for you to get, so it will just display the amount of clicks you got. Have fun!</div>
+ 
+ <div class = "gameSpace">  
      <button id = "button1" onclick ="startGame()">Start</button>
   <button id = "ballReset" onclick = "ballReset()"> Reset</button>
   
   <div id = "ballCount"> Times Clicked: </div>
-  
+  <div class = "ballspace">
   <div id= "ball" class ="ball" onclick="ballClicked()">
   </div>
- 
+  </div>
+  </div>
 
 </div>
 
-<div id="page6" style="display:none">
-    <div>
-     Chopsticks
+<div id="page6" class = "gamePage" style="display:none">
+    
+    <div class = "instructionsBar">This game is a computer version of the finger game Chopsticks. Each player has two "hands" that have a certain amount of fingers up. On your turn you select which of your hands you would like to use (shown in green) to add to one of your opponents hands (shown in red). Your other hand will also appear in red, as you can choose to split the number on your chosen hand with that of the other hand. If a hand gets to 5 it is out. The last one standing wins!</div>
+     
+     <div class = "gameSpace">
      <button id = "csStartBtn" onclick = "csStart()">Start</button>
 <button id = "csResetBtn" onclick = "csReset()">Reset</button>
 <div id = "csWinner"></div>
@@ -159,15 +160,17 @@ Vs. Computer
 <div id="splitResult">Select the amount to move</div>
 </div>
 
+<div class = "centered">
 <div class="csParent">
 <div id ="cs1" class= "csBox" onclick = "csChoice(this, 1)"> 1 </div>
 <div id ="cs2" class= "csBox" onclick = "csChoice(this, 2)"> 1 </div>
 <div id ="cs3" class= "csBox" onclick = "csChoice(this, 1)"> 1 </div>
 <div id ="cs4" class= "csBox" onclick = "csChoice(this, 2)"> 1 </div>
 </div>
- 
 </div>
+</div> 
 </div>
+
 
   
 <script src="script.js"></script>

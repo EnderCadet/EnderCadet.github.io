@@ -34,7 +34,7 @@ img {
 
 .header:hover {
   color: #004545;
-  text-shadow: 2px 2px 15px #0000;
+  text-shadow: 2px 2px 5px black;
 }
 
 .menu {
@@ -45,7 +45,7 @@ img {
 
 .menu:hover {
   color: #004545;
-  text-shadow: 2px 2px 15px #0000;
+  text-shadow: 2px 2px 5px black;
 }
 
 .page1{
@@ -57,11 +57,14 @@ img {
 }
 
 .page1top{
-  flex:1;  
-  padding: 10px;
+  flex: 1;
 }
 
-.page1topholder{
+.page1Low{
+  flex: 2;
+}
+
+.page1Flex{
   display: flex;
   flex-direction: row;
 }
@@ -73,41 +76,22 @@ img {
   border-radius: 10px;
   padding: 5px;
   text-align: center;
+  margin: 10px;
+}
+
+.page1Header{
+  font-size: 40px;
 }
 
 .welcomepic{
   flex:1;  
   height: 130px;
   width: 50px;
-}
-
-.page1header{
-  font-size: 25px;
-  padding: 10%;
-  margin-bottom: auto;
-  text-align: center;
-}
-
-.page1bottom{
-  flex:5;  
-    padding: 10px;
-}
-
-.page1bottomholder{
-  display: flex;
-  flex-direction: column;
-}
-
-.page1bottomhigh{
-  flex: 1;
-}
-
-.page1bottomlow{
-  flex: 1;
+  margin: 10px;
 }
 
 .margin{
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -115,7 +99,7 @@ img {
 .gamePage{
   margin-top: 5px;
   padding: 10px;
-  height: 526px;
+  height: 548px;
   background-image: linear-gradient(to bottom, #D7DDD9, #DDE3E1, #D5D9E8);
   display: flex;
   flex-direction: row
@@ -213,11 +197,11 @@ margin-top: 20px;
 }
 
 .coin{
-  display: inline-block;
   border: 2px grey solid;
   background-color: silver;
   height: 20px;
   width: 20px;
+  margin: 5px;
   border-radius: 100%;
 }
 
@@ -336,13 +320,8 @@ margin-top: 20px;
   border-radius: 50%;
   border: solid;
   background-color: blue;
-  margin-top: 50px;
-  margin-left: 50px;
-}
-
-.ballspace{
-  height: 100%;
-  border: solid
+  margin-top: 20%;
+  margin-left: 20%;
 }
 
 .csParent {
@@ -374,6 +353,11 @@ grid-gap: 40px;
   border: solid 5px red;  
 }
 
+.splitbuttons{
+  position: absolute;
+  top: 260px;
+  display: none;
+}
 .splitbuttons{
   position: absolute;
   top: 260px;

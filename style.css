@@ -16,7 +16,6 @@ img {
 
 .wholepage{
   width: 100%;
-  border: solid;
 }
 
 .head-box{
@@ -41,7 +40,6 @@ img {
 .menu {
   display: inline-block;
   margin-left: 20px;
-
   vertical-align: sub;
 }
 
@@ -52,28 +50,82 @@ img {
 
 .page1{
   margin-top: 5px;
-  height: 100%;
-  border: 3px green solid;
+  height: 500px;
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(to bottom, #D7DDD9, #DDE3E1, #D5D9E8);
 }
 
+.page1top{
+  flex:1;  
+  padding: 10px;
+}
 
+.page1topholder{
+  display: flex;
+  flex-direction: row;
+}
+
+.welcome {
+  flex:1;  
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.welcomepic{
+  flex:1;  
+  height: 130px;
+  width: 50px;
+}
+
+.page1header{
+  font-size: 25px;
+  padding: 10%;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+.page1bottom{
+  flex:5;  
+    padding: 10px;
+}
+
+.page1bottomholder{
+  display: flex;
+  flex-direction: column;
+}
+
+.page1bottomhigh{
+  flex: 1;
+}
+
+.page1bottomlow{
+  flex: 1;
+}
+
+.margin{
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 .gamePage{
   margin-top: 5px;
   padding: 10px;
+  height: 500px;
   background-image: linear-gradient(to bottom, #D7DDD9, #DDE3E1, #D5D9E8);
   display: flex;
   flex-direction: row
 }
 
 .instructionsBar{
+  background-color: white;
   border-radius: 10px;
   padding: 5px;
   flex: 1;
-  background-color: white;
 }
 
 .gameSpace {
@@ -175,7 +227,6 @@ margin-top: 20px;
 
 .parent2{
   height: 250px;
-  border: solid black;
 }
 
 .pos1{
@@ -277,6 +328,7 @@ margin-top: 20px;
     top: 245px;    
   }
 }
+
 
 .ball {
   width: 20px;

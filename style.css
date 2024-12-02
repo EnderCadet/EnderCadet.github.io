@@ -50,7 +50,7 @@ img {
 
 .page1{
   margin-top: 5px;
-  height: 500px;
+  height: 568px;
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(to bottom, #D7DDD9, #DDE3E1, #D5D9E8);
@@ -115,7 +115,7 @@ img {
 .gamePage{
   margin-top: 5px;
   padding: 10px;
-  height: 500px;
+  height: 526px;
   background-image: linear-gradient(to bottom, #D7DDD9, #DDE3E1, #D5D9E8);
   display: flex;
   flex-direction: row

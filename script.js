@@ -427,8 +427,8 @@ function ballClicked(){
 }
 
 function rand(){
-	x = Math.floor(Math.random() * 95);
-  y = Math.floor(Math.random() * 95);
+	x = Math.floor(Math.random() * 67);
+  y = Math.floor(Math.random() * 97);
   document.getElementById("ball").style.marginTop = x + "%";
   document.getElementById("ball").style.marginLeft = y + "%";
 }
@@ -609,6 +609,5 @@ function csWinCheck(){
   }
   else if(document.getElementById("cs2").innerText === "" && document.getElementById("cs4").innerText === ""){
   	document.getElementById("csWinner").innerText = "Player 1 wins!";
-  }
-	
+  }	
 }

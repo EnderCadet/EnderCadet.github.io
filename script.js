@@ -427,8 +427,8 @@ function ballClicked(){
 }
 
 function rand(){
-  x = Math.floor(Math.random() * 53);
-  y = Math.floor(Math.random() * 97);
+  x = Math.floor(Math.random() * 66);
+  y = Math.floor(Math.random() * 96);
   document.getElementById("ball").style.marginTop = x + "%";
   document.getElementById("ball").style.marginLeft = y + "%";
 }

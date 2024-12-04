@@ -35,6 +35,7 @@ img {
 .header:hover {
   color: #004545;
   text-shadow: 2px 2px 5px black;
+  cursor: pointer;
 }
 
 .menu {

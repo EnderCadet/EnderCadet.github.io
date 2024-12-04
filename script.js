@@ -117,6 +117,11 @@ if (gameWon != true){
     document.getElementById("winner").innerText = "The Winner is player " + player;
     gameWon = true;
   }
+  else if (turn === 9){
+  document.getElementById("winner").innerText = "Tie game!";
+    gameWon = true;
+    gameStart = false;
+  }
  }
 }
 

@@ -255,10 +255,11 @@ document.getElementById("coinWinnerHead").innerText = "";
 }
 
 //cup game -------------------------------------------------
-function startCup(){
+function startCup(){		
+    guessCup(document.getElementById("cup2"));    
     round += 1;
     cupGameRun = true;
-    rounds()
+    rounds();
   }
 
   function resetCup(){

@@ -262,7 +262,7 @@ document.getElementById("coinWinnerHead").innerText = "";
 //cup game -------------------------------------------------
 function startCup(){		
     guessCup(document.getElementById("cup2"));    
-    setTimeout(function(){round += 1, cupGameRun = true, rounds()}, 2000);
+    setTimeout(function(){round += 1, cupGameRun = true, rounds()}, 1500);
   }
 
   function resetCup(){

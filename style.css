@@ -16,6 +16,7 @@ img {
 
 .wholepage{
   width: 100%;
+  background-image: linear-gradient(to bottom, #D7DDD9, #DDE3E1, #D5D9E8);
 }
 
 .head-box{

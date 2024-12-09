@@ -231,7 +231,7 @@ function pileReset(pile, gameReset){
 for (let i=0; i < pile.length; i++){
   document.getElementById((pile[i]).id).className = "coin";
   if (gameReset === true){
-  document.getElementById((pile[i]).id).style.display = "inline-block";
+  document.getElementById((pile[i]).id).style.display = "block";
   }
 }
 

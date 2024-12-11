@@ -205,6 +205,10 @@ margin-top: 20px;
   border-radius: 100%;
 }
 
+.coin:hover {
+  cursor: pointer;
+}
+
 .selected{
   border: 3px green solid;
 }
@@ -324,6 +328,10 @@ margin-top: 20px;
   color: blue;
   margin-top: 10%;
   margin-left: 30%;
+}
+
+.ball:hover {
+  cursor: pointer;
 }
 
 .csParent {

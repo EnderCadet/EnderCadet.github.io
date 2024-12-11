@@ -321,11 +321,7 @@ margin-top: 20px;
 
 .ball {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: solid;
-  background-color: blue;
+  color: blue;
   margin-top: 10%;
   margin-left: 30%;
 }
